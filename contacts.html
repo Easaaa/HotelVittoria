@@ -52,13 +52,13 @@
       <p>Compila il modulo, indicando esattamente le date di arrivo e partenza da te gradite, specificando la tipologia di alloggio preferita (vedi pagina camere). Grazie.</p>
     </div>
     <div class='contact-section'>
-       <form class='contact-form' action='' method='post'>
-          <input type="text" placeholder='Il tuo nome e cognome' class='contact-form-text'>
-          <input type="email" placeholder='La tua email' class='contact-form-text'>
-          <input type="text" placeholder='Il tuo numero di telefono' class='contact-form-text'>
-          <input type="text" placeholder='Tipo di camera gradita' class='contact-form-text'>
-          <textarea class='contact-form-text' placeholder='Scrivi qui la tua richiesta'></textarea>
-          <input type="submit" class='contact-form-btn' value="Invia">
+       <form class='contact-form' action="contactForm.php" method='post'>
+          <input type="text" name="name" placeholder='Il tuo nome e cognome' class='contact-form-text'>
+          <input type="email" name="email" placeholder='La tua email' class='contact-form-text'>
+          <input type="text" name="phoneNumber" placeholder='Il tuo numero di telefono' class='contact-form-text'>
+          <input type="text" name="roomView" placeholder='Tipo di camera gradita' class='contact-form-text'>
+          <textarea name="text" placeholder='Scrivi qui la tua richiesta' class='contact-form-text'></textarea>
+          <input type="submit" name="submit" class='contact-form-btn' value="Invia">
        </form>
     </div>
   </section>
