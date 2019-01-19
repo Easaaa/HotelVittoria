@@ -891,24 +891,24 @@ span.choose {
   font-size: 22px;
 }
 
-.price-result button  {
+.price-result .btn {
   border: 1px solid #bc913c;
   background: transparent;
   border-radius: 15px;
   color: #bc913c;
-  font-weight: 15px;
+  font-size: 20px;
   width: 180px;
   padding: 5px;
   font-weight: 100;
 }
 
-.price-result button:hover {
+.price-result .btn:hover {
   background: #bc913c;
   color: #120e2b;
   cursor: pointer;
 }
 
-.price-result button:hover i{
+.price-result .btn:hover i{
   color: #120e2b;
 }
 
