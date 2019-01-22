@@ -248,6 +248,13 @@ a {
   .logo__header {
     margin: 0;
   }
+  .text__header {
+    visibility: hidden;
+    margin-top: -250px;
+  }
+  .logo__header img {
+    width: 80%;
+  }
 } 
 
 /* SCROLL IMG */
