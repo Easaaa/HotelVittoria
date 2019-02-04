@@ -15,6 +15,7 @@ h2 {
   font-size: 3rem;
   font-weight: 200;
   color: #bc913c;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 hr {
@@ -81,7 +82,7 @@ a {
 #mainNavbar {
   border-bottom: 1px solid #bc913c;
   background-color: #120e2b;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -92,7 +93,6 @@ a {
   color: #bc913c;
   font-size: 2rem;
 }
-
 
 #mainNavbar.navbar-shrink .navbar-brand {
   color: #bc913c;
@@ -105,6 +105,7 @@ a {
 .navbar-nav > li > a{
   color: #bc913c;
   font-weight: 200;
+  font-size: 1.7rem;
 }
 
 #mainNavbar .nav-link {
@@ -138,21 +139,34 @@ a {
   place-content: center;
 }
 
-.social__rate {
+#banner-rate {
   background: white;
-  width: 100%;
-  grid-area: rate;
+  box-shadow: 0 0 10px rgba(83, 83, 83, 0.7);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  margin: 60px 0 0px 0;
+  padding: 15px;
+}
+
+#banner-rate img {
+  max-width: 300px;
+  max-height: 55px;
+}
+
+#banner-rate p {
+  color: black;
   text-align: center;
-  padding-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Advent Pro', sans-serif;
 }
 
-.social__rate img {
-  width: 40%;
-}
-
-@media (max-width: 620px) {
-  .social__rate {
+@media screen and (max-width: 1000px) {
+  #tripad {
     display: none;
+    position: absolute;
   }
 }
 
@@ -160,7 +174,8 @@ a {
   margin-top: 50px;
   color: #bc913c;
   font-size: 3.5rem;
-  font-weight: 200;
+  font-weight: 100;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .logo__header {
@@ -175,7 +190,6 @@ a {
 .logo__header img {
   min-width: 200px;
   min-height: 200px;
-  
   height: auto;
   border-radius: 60%;
   /* box-shadow: 2px 2px 10px #bc913c; */
@@ -250,9 +264,6 @@ a {
     visibility: hidden;
     margin-top: -250px;
   }
-  .logo__header img {
-    width: 80%;
-  }
 } 
 
 /* SCROLL IMG */
@@ -319,6 +330,7 @@ a {
 
 #about h2{
   text-align: center;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .title__desc {
@@ -383,6 +395,7 @@ a {
   font-size: 2rem;
   font-weight: 200;
   margin: 10px 10px;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .service p {
@@ -520,6 +533,11 @@ a {
   text-align: center;
 }
 
+.text__index__rooms h2 {
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+}
+
 .img__lake {
   grid-area: img1;
   justify-self: center;
@@ -593,6 +611,10 @@ a {
   width: 90%;
 }
 
+.show-rooms h2 {
+  margin-bottom: 20px;
+}
+
 .show-rooms img {
   width: 100%;
   min-width: 320px;
@@ -651,12 +673,12 @@ a {
 
 .extra-info h2 {
   margin-top: 100px;
-  font-size: 26px;
   text-align: center;
 }
 
 .extra-info h5 {
   text-align: start;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .extra-info p {
@@ -696,6 +718,10 @@ a {
 .text-title h2, h5, .social-icon-price, i {
   text-align: center;
   text-rendering: auto;
+}
+
+.text-title h2 {
+  text-transform: uppercase;
 }
 
 .text-season p, h3{
@@ -864,6 +890,7 @@ span.choose {
 }
 
 .results {
+  font-family: 'Advent Pro', sans-serif;
   display: grid;
   visibility: hidden;
   grid-template-columns: 2fr 1fr;
@@ -873,7 +900,6 @@ span.choose {
   box-shadow: 0 0 6px 4px #bc913c;
   padding: 40px;
   max-width: 800px;
-  max-height: 800px;
   text-align: center;
   margin: 0 auto;
   margin-top: 50px;
@@ -889,10 +915,11 @@ span.choose {
   text-transform: uppercase;
   color: #bc913c;
   align-self: center;
+  font-size: 2rem;
 }
 
 .number {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
 }
 
@@ -990,7 +1017,10 @@ span.choose {
   }
   .rooms-service ul {
     text-align: start;
-}
+  }
+  .results {
+    box-shadow: none;
+  }
 }
 
 /* CONTACT */
@@ -1002,6 +1032,10 @@ span.choose {
 
 #contacts hr {
   border: 1px solid #bc913c;
+}
+
+#contacts h2 {
+  text-transform: uppercase;
 }
 
 .border {
@@ -1078,6 +1112,7 @@ textarea.contact-form-text {
 
 #info-contacts h2{
   margin-bottom: 75px;
+  text-transform: uppercase;
 }
 
 #info-contacts h5{
@@ -1190,6 +1225,7 @@ iframe {
 
 #map h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 #agriturismo {
