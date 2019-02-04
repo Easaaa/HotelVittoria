@@ -29,6 +29,11 @@ a {
   transition: all 0.2s;
 }
 
+#languages {
+  margin-right: 400px;
+  color: white;
+}
+
 .show-rooms a i {
   font-size: 26px;
   color: white;
@@ -1278,70 +1283,8 @@ iframe {
   margin: 0 auto;
 }
 
-/* FOOTER */
+/* SOCIAL ICON */
 
-footer {
-  background: #120e2b;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 350;
-  max-height: 220px;
-  border-top: 2px solid #bc913c;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-footer a {
-  color: white;
-  font-size: 14px;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer li {
-  text-indent: -1.4em;
-  margin-right: 1px;
-}
-
-footer .far {
-  margin-left: 14px;
-}
-
-.central__footer {
-  text-align: center;
-}
-
-.left__footer {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  text-align: start;
-}
-
-.item__left__footer {
-  grid-row: -1 / 3;
-  margin: 5px;
-}
-
-.item__left__footer a {
-  text-decoration: none;
-}
-
-.item__left__footer a:hover {
-  color: rgba(255, 255, 204, 1);
-}
-
-.right__footer {
-  text-align: end;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-
-.item__info__footer {
-  grid-row: -1 / 3;
-  margin: 5px;
-}
 
 .item__social__footer {
   text-align: center;
@@ -1402,10 +1345,127 @@ footer .far {
 }
 
 @media screen and (max-width: 480px) {
-  .item__info__footer i {
-    display: none;
-  }
   .item__social__footer {
     display: none;
+  }
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 10px;
+  color: white;
+  background: #0f0c29;
+  max-height: 400px;
+  display: grid;
+  border-top: 2px solid #bc913c;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "copyr logo info"
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer a {
+  color: #bc913c;
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  margin-right: 1px;
+  font-size: 1rem;
+}
+
+.left-footer {
+  grid-area: copyr;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.central-footer {
+  grid-area: logo;
+  text-align: center;
+}
+
+.central-footer img {
+  max-width: 150px;
+}
+
+.powered-by {
+  margin-top: 10px;
+}
+
+.powered-by a:hover {
+  color: #bc913c;
+}
+
+.right__footer {
+  text-align: end;
+  grid-area: info;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item__info__footer {
+  grid-row: -1 / 4;
+  margin: 5px;
+}
+
+.social__footer {
+  text-align: start;
+}
+
+.social__footer .social-btn {
+  display: inline-block;
+  border-radius: 50%;
+  color: white;
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.social__footer .social-btn:hover {
+  background: #bc913c;
+  color: #f1f1f1;
+  transition: 0.5s;
+}
+
+.social-btn a {
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "logo"
+        "info"
+        "copyr";
+    place-items: center;
+  }
+  .header-right h1 {
+    font-size: 3rem;
+  }
+  .content-about, #apartment {
+    padding: 0;
+  }
+  .content-index .header-right {
+    padding: 0;
+  }
+  .social__footer, .powered-by {
+    text-align: center;
+  }
+  .right__footer {
+    text-align: start;
+  }
+  footer li {
+    text-indent: 0;
   }
 }
