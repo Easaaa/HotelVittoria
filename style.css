@@ -30,7 +30,17 @@ a {
 }
 
 #languages {
-  margin-right: 400px;
+  padding: 60px 10px 0 0;
+  color: white;
+  text-align: end;
+}
+
+#languages a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+#languages a:hover {
   color: white;
 }
 
@@ -139,7 +149,6 @@ a {
     "logo logo secondary"
     "mouse mouse mouse"
     "rate rate rate";
-  margin-top: 80px;
   height: 93%;
   place-content: center;
 }
