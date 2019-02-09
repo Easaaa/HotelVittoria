@@ -372,6 +372,8 @@ a {
     grid-template-areas:
     "text" 
     "img";
+    place-items: center;
+    margin: 0 0 50px 0;
   }
   #about .text__desc {
     text-rendering: auto;
