@@ -31,12 +31,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="index-rooms.html">ROOMS</a></li>
-          <li class="nav-item"><a class="nav-link" href="prices.html">PRICES</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">CONTACT</a></li>
-        </ul>
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="index-rooms.html">ZIMMER</a></li>
+              <li class="nav-item"><a class="nav-link" href="prices.html">PREISE</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.php">KONTAKT</a></li>
+          </ul>
       </div>
     </nav>
   </div>
@@ -50,24 +50,24 @@
   <button id='topBtn'><i class='fas fa-arrow-up'></i></button>
   
   <section id='contacts'>
-    <!-- <div class='container text-center'>
-      <h2>Contact</h2>
-      <p>Fill in the form and indicate your arrival and departure dates. Please specify the kind of accommodation you prefer (see the page “rooms”).</p>
+    <div class='container text-center'>
+        <h2>Kontakt</h2>
+        <p>Füllt das Formular bitte genau aus und gebt die An- und Abreise Daten sowie die genaue Zimmerbezeichnung an (siehe Seite “Zimmer”). Danke.</p>
     </div>
     <div class='contact-section'>
-      <form class='contact-form' action="../contactForm.php" method='post'>
-        <input type="text" name="name" placeholder='Name and Surname' class='contact-form-text'>
-        <input type="email" name="email" placeholder='Email' class='contact-form-text'>
-        <input type="text" name="phoneNumber" placeholder='Phone Number' class='contact-form-text'>
-        <input type="text" name="roomView" placeholder='Kind of apartment requested' class='contact-form-text'>
-        <textarea name="text" placeholder='Write here your request' class='contact-form-text'></textarea>
-        <input type="submit" name="submit" class='contact-form-btn' value="Send">
-     </form>
-    </div> -->
+        <form class='contact-form' action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
+            <input type="text" name="name" placeholder='Vor- und Nachname' class='contact-form-text'>
+            <input type="email" name="email" placeholder='Email-Adresse' class='contact-form-text'>
+            <input type="text" name="phoneNumber" placeholder='Telefonnummero' class='contact-form-text'>
+            <input type="text" name="roomView" placeholder='Gewünschtes Apartment' class='contact-form-text'>
+            <textarea name="text" placeholder='Anfragetext' class='contact-form-text'></textarea>
+            <input type="submit" name="submit" class='contact-form-btn' value="Abschicken">
+         </form>
+    </div>
   </section>
   
   <section id='info-contacts'>
-      <h2>Contact</h2>
+      <h2>INFORMATIONEN</h2>
       <div class="address">
           <div class='info-contact'>
                <i class="fas fa-phone-square"></i>
@@ -76,7 +76,7 @@
           </div>
           <div class='info-contact'>
                <i class="fas fa-mobile-alt"></i>
-               <h5>Hotel Manager Tononi Luca</h5>
+               <h5>Direktor Tononi Luca</h5>
                <p>+39 329 3103384</p>
           </div>
           <div class="info-contact">
@@ -94,8 +94,8 @@
             <a class='social-btn' target="_blank" href="https://www.tripadvisor.it/Hotel_Review-g950408-d2557915-Reviews-Hotel_Vittoria-Toscolano_Maderno_Province_of_Brescia_Lombardy.html"><i class="fab fa-tripadvisor"></i>
            </a>
            <a class='social-btn' href="mailto:info@vittoriahotel.eu">
-            <i class="far fa-envelope"></i>
-          </a>
+              <i class="far fa-envelope"></i>
+            </a>
          </div>
         </div>
         </div>
@@ -103,17 +103,15 @@
   </section>
   
   <section id='map'>
-        <h2>Our Address</h2>
+        <h2>WO WIR SIND</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.635214791765!2d10.600686315563266!3d45.638063979103386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfe1e097a1faebc6!2sHotel+Vittoria!5e0!3m2!1sit!2sit!4v1545842760573" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
   
   <section id='agriturismo'>
      <div class='text__title__agriturismo'>
         <h2>Agriturismo San Lorenzo di Persegno</h2>
-        <em>Our alternative option for all mountain lovers</em>
-        <p class='text__desc__agriturismo'><span>Click</span> on the image to discover our mountain facility.
-          The farm holiday accommodation is located 7 km far from the Toscolano Maderno village.
-         <span>The apartments</span> are fully furnished and equipped with any tool. In the facility you can find a solarium; a <span>wonderful river</span> where you can go swimming is just one km away. </p>
+        <em>Unsere Alternative für die Freunde der Berge</em>
+        <p class='text__desc__agriturismo'><span>Klicke</span> auf das Bild, um mehr über unsere Anlage in den Bergen zu erfahren. Der Agrotourismus befindet sich 7 km vom Ort Toscolano Maderno entfernt.<span>Die Apartments</span> sind vollständig möbliert und mit allem ausgestattet. Im Areal befindet sich ein Solarium und einen Kilometer entfernt ist ein Fluss wo man sich herrlich <span>erfrischen und baden kann.</span></p>
       </div>
       <div class="img__agriturismo">
             <a target='_blank' href="https://sanlorenzodipersegno.it/"><img src="../images/agriturismo.png" alt="First slide">
@@ -138,9 +136,6 @@
           </a>
           <a target="_blank" class='social-btn' href="https://www.tripadvisor.it/Hotel_Review-g950408-d2557915-Reviews-Hotel_Vittoria-Toscolano_Maderno_Province_of_Brescia_Lombardy.html"><i
               class="fab fa-tripadvisor"></i>
-          </a>
-          <a class='social-btn' href="mailto:info@vittoriahotel.eu">
-            <i class="far fa-envelope"></i>
           </a>
         </div>
         <p class="powered-by">Copyright © 2019 | Created with joy by <a target='_blank' href="https://easaaa.github.io/portfolio1.0/">TON Media & Design</a></p>
