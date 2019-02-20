@@ -1,3 +1,24 @@
+<?php
+
+if (isset($_POST['submit'])) {
+  $name = $_POST['name'];
+  $emailFrom = $_POST['email'];
+  $phoneNumber = $_POST['phoneNumber'];
+  $roomView = $_POST['roomView'];
+  $message = $_POST['text'];
+
+  $mailTo = "info@vittoriahotel.eu";
+  $headers = "E-mail da: ".$emailFrom;
+  $txt = "Hai ricevuto un e-mail da ".$name.".\n\n".
+         "Numero di telefono: ".$phoneNumber.".\n\n".
+         "Camera richiesta: ".$roomView.".\n\n".
+         $message;
+
+  mail($mailTo, $headers, $txt);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +56,7 @@
             <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
             <li class="nav-item"><a class="nav-link" href="index-rooms.html">CAMERE</a></li>
             <li class="nav-item"><a class="nav-link" href="prices.html">PREZZI</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacts.html">CONTATTI</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.php">CONTATTI</a></li>
         </ul>
       </div>
     </nav>
@@ -50,12 +71,12 @@
   <button id='topBtn'><i class='fas fa-arrow-up'></i></button>
   
   <section id='contacts'>
-    <!-- <div class='container text-center'>
+    <div class='container text-center'>
       <h2>Contatti</h2>
       <p>Compila il modulo, indicando esattamente le date di arrivo e partenza da te gradite, specificando la tipologia di alloggio preferita (vedi pagina camere). Grazie.</p>
     </div>
     <div class='contact-section'>
-       <form class='contact-form' action="../contactForm.php" method='post'>
+       <form class='contact-form' action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
           <input type="text" name="name" placeholder='Il tuo nome e cognome' class='contact-form-text' required>
           <input type="email" name="email" placeholder='La tua email' class='contact-form-text' required>
           <input type="text" name="phoneNumber" placeholder='Il tuo numero di telefono' class='contact-form-text' required>
@@ -63,7 +84,7 @@
           <textarea name="text" placeholder='Scrivi qui la tua richiesta' class='contact-form-text' required></textarea>
           <input type="submit" name="submit" class='contact-form-btn' value="Invia">
        </form>
-    </div> -->
+    </div> 
   </section>
   
   <section id='info-contacts'>
