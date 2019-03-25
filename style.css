@@ -1071,26 +1071,15 @@ span.choose {
   }  
 }
 
-@media screen and (max-width: 860px){
-  .results {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 721px){
-  .results {
-    width: 70%;
-  }
-}
 @media screen and (max-width: 640px){
   .results {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    box-shadow: none;
+    grid-gap: 0;
   }
   .rooms-service ul {
     text-align: start;
-  }
-  .results {
-    box-shadow: none;
   }
 }
 
