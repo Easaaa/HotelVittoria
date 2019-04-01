@@ -960,6 +960,16 @@ span.choose {
   color: #120e2b;
 }
 
+#gif {
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+
+#gif img {
+  width: 50px;
+}
+
 .results {
   font-family: 'Advent Pro', sans-serif;
   display: grid;
