@@ -960,14 +960,16 @@ span.choose {
   color: #120e2b;
 }
 
+/* ------- GIF -------- */
+
 #gif {
   text-align: center;
   padding: 20px;
   display: none;
 }
 
-#gif img {
-  width: 50px;
+#gif img {
+  width: 150px;
 }
 
 .results {

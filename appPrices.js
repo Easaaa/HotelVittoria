@@ -13,23 +13,21 @@ $('.dropdown-selection').click(function () {
   $(this).parents('.dropdown-selection').find('span').text($(this).text());
   $(this).parents('.dropdown-selection').find('input').attr('value', $(this).attr('id'));
   });
-  
 
-// INPUT
+  // INPUT
+  const input = document.querySelectorAll('input');
+  const inputSeason = input[0];
+  const inputPerson = input[1];
+  const inputView = input[2];
 
-const input = document.querySelectorAll('input');
-const inputSeason = input[0];
-const inputPerson = input[1];
-const inputView = input[2];
+  // RESULT FORM
+  const imgResult = document.querySelector('.dinamic-img');
+  const roomFor = document.querySelector('.number');
+  const price = document.querySelector('.price');
+  const viewWord = document.querySelector('.view-word');
+  const result = document.querySelector('.results');
 
-// RESULT FORM
-
-const imgResult = document.querySelector('.dinamic-img');
-const roomFor = document.querySelector('.number');
-const price = document.querySelector('.price');
-const viewWord = document.querySelector('.view-word');
-
-const gif = document.getElementById('gif');
+  const gif = document.getElementById('gif');
 
 //Listen for submit
 
@@ -37,161 +35,149 @@ document.getElementById('search-form').addEventListener('submit', searchOn);
 
 function searchOn(e) {
   e.preventDefault();
-  document.querySelector('.results').style.visibility = "hidden";
+  result.style.visibility = "hidden";
   gif.style.display = 'block';
   setInterval(function () {
     gif.style.display = 'none';
-    if(inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'lake-view') {
+
+    if (inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'lake-view') {
       window.alert("Sorry this rooms is not available.");
+      setInterval(function () {
+        location.reload();
+      },3000);
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'double' && inputView.value === 'lake-view') {
+    else if (inputSeason.value === 'high-season' && inputPerson.value === 'double' && inputView.value === 'lake-view') {
       imgResult.setAttribute('src', '../images/rooms-index2.png');
       roomFor.textContent = '2';
       price.textContent = '€ 100';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'triple' && inputView.value === 'lake-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'triple' && inputView.value === 'lake-view') {
       imgResult.setAttribute('src', '../images/rooms-index2.png');
       roomFor.textContent = '3';
       price.textContent = '€ 130';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'quadruple' && inputView.value === 'lake-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'quadruple' && inputView.value === 'lake-view') {
       window.alert("Sorry this rooms is not available.");
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'garden-view') {
       window.alert("Sorry this rooms is not available.");
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'double' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'double' && inputView.value === 'garden-view') {
       imgResult.setAttribute('src', '../images/rooms-index.jpg');
       viewWord.textContent = 'giardino';
       roomFor.textContent = '2';
       price.textContent = '€ 96';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'triple' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'triple' && inputView.value === 'garden-view') {
       imgResult.setAttribute('src', '../images/rooms-index.jpg');
       viewWord.textContent = 'giardino';
       roomFor.textContent = '3';
       price.textContent = '€ 125';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'quadruple' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'quadruple' && inputView.value === 'garden-view') {
       imgResult.setAttribute('src', '../images/rooms-index.jpg');
       viewWord.textContent = 'giardino';
       roomFor.textContent = '4';
       price.textContent = '€ 160';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'mountain-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'mountain-view') {
       imgResult.setAttribute('src', '../images/rooms-index1.jpg');
       viewWord.textContent = 'montagna';
       roomFor.textContent = '1';
       price.textContent = '€ 50';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       }
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'double' && inputView.value === 'mountain-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'double' && inputView.value === 'mountain-view') {
       imgResult.setAttribute('src', '../images/rooms-index1.jpg');
       viewWord.textContent = 'montagna';
       roomFor.textContent = '2';
       price.textContent = '€ 96';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       }
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'triple' && inputView.value === 'mountain-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'triple' && inputView.value === 'mountain-view') {
       imgResult.setAttribute('src', '../images/rooms-index1.jpg');
       viewWord.textContent = 'montagna';
       roomFor.textContent = '3';
       price.textContent = '€ 110';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       }
-      if (inputSeason.value === 'high-season' && inputPerson.value === 'quadruple' && inputView.value === 'mountain-view') {
+      else if  (inputSeason.value === 'high-season' && inputPerson.value === 'quadruple' && inputView.value === 'mountain-view') {
       window.alert("Sorry this rooms is not available.");
       }
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'single' && inputView.value === 'lake-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'single' && inputView.value === 'lake-view') {
       imgResult.setAttribute('src', '../images/rooms-index2.png');
       roomFor.textContent = '1';
       price.textContent = '€ 76.50';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       }
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'double' && inputView.value === 'lake-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'double' && inputView.value === 'lake-view') {
       imgResult.setAttribute('src', '../images/rooms-index2.png');
       roomFor.textContent = '2';
       price.textContent = '€ 90';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       }
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'triple' && inputView.value === 'lake-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'triple' && inputView.value === 'lake-view') {
       imgResult.setAttribute('src', '../images/rooms-index2.png');
       roomFor.textContent = '3';
       price.textContent = '€ 120';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       }
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'quadruple' && inputView.value === 'lake-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'quadruple' && inputView.value === 'lake-view') {
       window.alert("Sorry this rooms is not available.");
       }
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'single' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'single' && inputView.value === 'garden-view') {
       window.alert("Sorry this rooms is not available.");
       } 
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'double' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'double' && inputView.value === 'garden-view') {
       imgResult.setAttribute('src', '../images/rooms-index.jpg');
       viewWord.textContent = 'giardino';
       roomFor.textContent = '2';
       price.textContent = '€ 88';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'triple' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'triple' && inputView.value === 'garden-view') {
       imgResult.setAttribute('src', '../images/rooms-index.jpg');
       viewWord.textContent = 'giardino';
       roomFor.textContent = '3';
       price.textContent = '€ 115';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'quadruple' && inputView.value === 'garden-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'quadruple' && inputView.value === 'garden-view') {
       imgResult.setAttribute('src', '../images/rooms-index.jpg');
       viewWord.textContent = 'giardino';
       roomFor.textContent = '4';
       price.textContent = '€ 140';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'single' && inputView.value === 'mountain-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'single' && inputView.value === 'mountain-view') {
       imgResult.setAttribute('src', '../images/rooms-index1.jpg');
       viewWord.textContent = 'montagna';
       roomFor.textContent = '1';
       price.textContent = '€ 45';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'double' && inputView.value === 'mountain-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'double' && inputView.value === 'mountain-view') {
       imgResult.setAttribute('src', '../images/rooms-index1.jpg');
       viewWord.textContent = 'montagna';
       roomFor.textContent = '2';
       price.textContent = '€ 86';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'triple' && inputView.value === 'mountain-view') {
+      else if  (inputSeason.value === 'low-season' && inputPerson.value === 'triple' && inputView.value === 'mountain-view') {
       imgResult.setAttribute('src', '../images/rooms-index1.jpg');
       viewWord.textContent = 'montagna';
       roomFor.textContent = '3';
       price.textContent = '€ 100';
-      document.querySelector('.results').style.visibility = "visible";
-      e.preventDefault();
+      result.style.visibility = "visible";
       } 
-      if (inputSeason.value === 'low-season' && inputPerson.value === 'quadruple' && inputView.value === 'mountain-view') {
+      else if (inputSeason.value === 'low-season' && inputPerson.value === 'quadruple' && inputView.value === 'mountain-view') {
       window.alert("Sorry this rooms is not available.");
-      } 
+    } 
+    else window.alert("Sorry something went wrong, try.");
   }, 3000);
 }
