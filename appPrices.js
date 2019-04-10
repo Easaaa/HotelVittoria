@@ -13,7 +13,7 @@ $('.dropdown-selection').click(function () {
   $(this).parents('.dropdown-selection').find('span').text($(this).text());
   $(this).parents('.dropdown-selection').find('input').attr('value', $(this).attr('id'));
   });
-
+/* 
   // INPUT
   const input = document.querySelectorAll('input');
   const inputSeason = input[0];
@@ -27,7 +27,7 @@ $('.dropdown-selection').click(function () {
   const viewWord = document.querySelector('.view-word');
   const result = document.querySelector('.results');
 
-  const gif = document.getElementById('gif');
+  const loader = document.getElementById('loading');
 
 //Listen for submit
 
@@ -35,10 +35,9 @@ document.getElementById('search-form').addEventListener('submit', searchOn);
 
 function searchOn(e) {
   e.preventDefault();
-  result.style.visibility = "hidden";
-  gif.style.display = 'block';
+  loader.style.display = 'block';
   setInterval(function () {
-    gif.style.display = 'none';
+    loader.style.display = 'none';
 
     if (inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'lake-view') {
       window.alert("Sorry this rooms is not available.");
@@ -181,3 +180,4 @@ function searchOn(e) {
     else window.alert("Sorry something went wrong, try.");
   }, 3000);
 }
+ */

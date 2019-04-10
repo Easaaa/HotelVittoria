@@ -775,27 +775,22 @@ a {
   margin: 0 auto;
 }
 
-#prices h5 {
-  font-weight: 200;
-  font-size: 18px;
-}
-
 #prices hr {
   border: 1px solid #bc913c;
   margin: 20px 20px 3px 20px;
 }
 
-.text-title h2, h5, .social-icon-price, i {
+.text-title, .text-season {
+  text-align: center;
+}
+
+.text-title h2, .social-icon-price, i {
   text-align: center;
   text-rendering: auto;
 }
 
 .text-title h2 {
   text-transform: uppercase;
-}
-
-.text-season p, h3{
-  text-align: center;
 }
 
 .text-season span {
@@ -927,7 +922,7 @@ span.choose {
   align-self: center;
 }
 
-.show-button {
+#show-btn {
   margin-top: 8px;
   margin-left: 40px;
   align-self: center;
@@ -941,36 +936,68 @@ span.choose {
 
 .pricing-table-input button {
   text-decoration: none;
-  color: #bc913c;
-  border: 2px solid #bc913c;
+  color: #120e2b;
+  border: none;
   display: inline;
-  padding: 5px;
+  padding: 10px;
   margin: 10px 0;
   border-radius: 20px;
   text-transform: uppercase;
   font-size: 16px;
   transition: 0.5s linear;
   cursor: pointer;
-  background: transparent;
-  width: 180px;
-}
-
-.pricing-table-input button:hover {
   background: #bc913c;
-  color: #120e2b;
+  width: 220px;
 }
 
-/* ------- GIF -------- */
 
-#gif {
+/* ------- LOADER -------- */
+
+#loading {
   text-align: center;
   padding: 20px;
   display: none;
 }
 
-#gif img {
+#loading img {
   width: 150px;
 }
+
+#feedback {
+  text-align: center;
+  padding: 30px;
+  display: none;
+}
+  
+#feedback p {
+  padding: 10px;
+  background: #24243e;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+  border-radius: 5px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#error {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
+
+#error p {
+  padding: 10px;
+  color:  white;
+  background: #ee0f0f;
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ------- SHOW RESULTS ------- */
 
 .results {
   font-family: 'Advent Pro', sans-serif;
@@ -1073,7 +1100,7 @@ span.choose {
       "room" 
       "button";
   }
-  .show-button {
+  #show-btn {
     margin-left: 0px;
   }
   .text-title h2, h5 {

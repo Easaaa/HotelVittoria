@@ -29,7 +29,7 @@ const roomFor = document.querySelector('.number');
 const price = document.querySelector('.price');
 const viewWord = document.querySelector('.view-word');
 
-const gif = document.getElementById('gif');
+const loader = document.getElementById('loading');
 
 //Listen for submit
 
@@ -38,9 +38,9 @@ document.getElementById('search-form').addEventListener('submit', searchOn);
 function searchOn(e) {
   e.preventDefault();
   document.querySelector('.results').style.visibility = "hidden";
-  gif.style.display = 'block';
+  loader.style.display = 'block';
   setInterval(function () {
-    gif.style.display = 'none';
+    loader.style.display = 'none';
     if(inputSeason.value === 'high-season' && inputPerson.value === 'single' && inputView.value === 'lake-view') {
       window.alert("Sorry this rooms is not available.");
       } 
