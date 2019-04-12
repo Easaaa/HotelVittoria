@@ -47,7 +47,11 @@
     </div>
   </div>
   
-  <button id='topBtn'><i class='fas fa-arrow-up'></i></button>
+  <div id="topBtn">
+      <a href="#mainNavbar">
+        <i class="fas fa-arrow-up"></i>
+      </a>  
+    </div>
   
   <section id='contacts'>
     <div class='container text-center'>

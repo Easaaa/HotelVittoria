@@ -36,11 +36,15 @@ a {
 
 #languages a {
   text-decoration: none;
-  padding: 5px;
+  padding: 3px 10px;
 }
 
 #languages a:hover {
-  color: white;
+  color: #bc913c;
+}
+
+.current {
+  background: white;
 }
 
 .show-rooms a i {
@@ -62,17 +66,21 @@ a {
 }
 
 #topBtn {
+  text-align: start;
+  padding: 15px;
   position: fixed;
-  bottom: 80px;
-  right: 20px;
-  font-size: 22px;
-  width: 50px;
-  height: 50px;
-  background: #bc913c;
-  color: #120e2b;
-  border: none;
-  cursor: pointer;
+  bottom: 0;
+  right: 0;
+  background: transparent;
   display: none;
+  transition: 0.3s ease-in;
+}
+
+#topBtn a i {
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  background: #bc913c;
 }
 
 .sub__header {
@@ -461,66 +469,6 @@ a {
     width: 100%;
   }
 }
-
-/* TESTIMONIALS */
-/* 
-#testimonials {
-  background: #19193b;
-  text-align: center;
-  padding-top: 30px;
-}
-
-#testimonials em img {
-  width: 10%;
-  border-radius: none;
-}
-
-#testimonials em {
-  color: #bc913c;
-  text-transform: uppercase;
-}
-
-#testimonials span {
-  color: #bc913c;
-  font-weight: 700;
-}
-
-#testimonials .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#testimonials .col {
-  flex: 33.33%;
-  max-width: 33.33%;
-  box-sizing: border-box;
-  padding: 15px;
-}
-
-.testimonial {
-  padding: 30px;
-}
-
-.testimonial img {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 960px){
-  #testimonials .col {
-    flex: 100%;
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px){
-  #testimonials .col {
-    flex: 100%;
-    max-width: 100%;
-  }
-} */
 
 /* INDEX ROOMS */
 
@@ -963,23 +911,6 @@ span.choose {
   width: 150px;
 }
 
-#feedback {
-  text-align: center;
-  padding: 30px;
-  display: none;
-}
-  
-#feedback p {
-  padding: 10px;
-  background: #24243e;
-  font-size: 2rem;
-  font-weight: 100;
-  color: white;
-  border-radius: 5px;
-  max-width: 200px;
-  margin: 0 auto;
-}
-
 #error {
   display: none;
   text-align: center;
@@ -988,8 +919,7 @@ span.choose {
 
 #error p {
   padding: 10px;
-  color:  white;
-  background: #ee0f0f;
+  color:  #ff0000;
   font-size: 2rem;
   font-weight: 100;
   border-radius: 5px;
@@ -1007,7 +937,7 @@ span.choose {
   grid-template-rows: 1fr 1fr;
   grid-gap: 20px;
   justify-items: center;
-  box-shadow: 0 0 6px 4px #bc913c;
+  border: 1px solid white;
   padding: 40px;
   max-width: 800px;
   text-align: center;
@@ -1114,7 +1044,7 @@ span.choose {
   .results {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    box-shadow: none;
+    border: none;
     grid-gap: 0;
   }
   .rooms-service ul {
