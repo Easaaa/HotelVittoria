@@ -17,7 +17,7 @@ function carousel() {
   setTimeout(carousel, 3000); 
 }
 
-
+// TOP BUTTON EFFECT 
 $(document).ready(function () {
   
   $(window).scroll(function () {

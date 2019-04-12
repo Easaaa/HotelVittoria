@@ -6,18 +6,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400" rel="stylesheet">
 
-  <link rel='stylesheet' href='../style.css'>
+  <link rel='stylesheet' href='../stylesheets/main.css'>
+  <link rel='stylesheet' href='../stylesheets/rooms.css'>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="icon" href="../images/logo.png" type="image/png">
   <title>Hotel Vittoria</title>
 </head>
@@ -28,50 +29,52 @@
     <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark py-0 fixed-top" style='color:yellow'>
       <a class="navbar-brand" href="#">★ ★ ★
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
+        aria-label="toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navLinks">
-          <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-              <li class="nav-item"><a class="nav-link" href="index-rooms.html">ZIMMER</a></li>
-              <li class="nav-item"><a class="nav-link" href="prices.html">PREISE</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.php">KONTAKT</a></li>
-          </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="index-rooms.html">ZIMMER</a></li>
+          <li class="nav-item"><a class="nav-link" href="prices.html">PREISE</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.php">KONTAKT</a></li>
+        </ul>
       </div>
     </nav>
   </div>
 
 
   <div class="half__logo">
-      <img src="../images/half-logoHD.jpg" alt="half logo">
+    <img src="../images/half-logoHD.jpg" alt="half logo">
+  </div>
+
+  <section id='indexRooms'>
+    <div class="text__index__rooms">
+      <h2>Die Zimmer</h2>
+      <p>Wenn du auf die Fotos klickst, wirst du weiter Bilder sehen können und alle Informationen zu unseren diversen
+        Zimmern erhalten.</p>
+      <hr>
     </div>
-    
-    <section id='indexRooms'>
-       <div class="text__index__rooms">
-           <h2>Die Zimmer</h2>
-           <p>Wenn du auf die Fotos klickst, wirst du weiter Bilder sehen können und alle Informationen zu unseren diversen Zimmern erhalten.</p>
-           <hr>
-       </div>
-       <div class="container-index-rooms img__lake">
-        <a href="lake-rooms.html"><img src="../images/room-index.png" alt="" class='image-index'>
+    <div class="container-index-rooms img__lake">
+      <a href="lake-rooms.html"><img src="../images/room-index.png" alt="" class='image-index'>
         <div class="overlay-index-rooms">
           <div class="text-index-rooms">Die Zimmer mit Blick auf den See</div>
         </div>
-      </div>
-      <div class="container-index-rooms img__garden">
-        <a href="garden-rooms.html"><img src="../images/room-index2.png" alt="" class='image-index'>
+    </div>
+    <div class="container-index-rooms img__garden">
+      <a href="garden-rooms.html"><img src="../images/room-index2.png" alt="" class='image-index'>
         <div class="overlay-index-rooms">
           <div class="text-index-rooms">Die Zimmer im Erdgeschoss</div>
         </div>
-      </div>
-      <div class="container-index-rooms img__mountain">
-        <a href="mountain-rooms.html"><img src="../images/room-index1.png" alt="" class='image-index'>
+    </div>
+    <div class="container-index-rooms img__mountain">
+      <a href="mountain-rooms.html"><img src="../images/room-index1.png" alt="" class='image-index'>
         <div class="overlay-index-rooms">
           <div class="text-index-rooms">Die nach innen ausgerichteten Zimmer</div>
         </div>
-      </div>
-       <!-- <div class="img__lake inner">
+    </div>
+    <!-- <div class="img__lake inner">
          <a href="lake-rooms.html"><img src="../images/room-index.png" alt="" class='img-fluid float-left'>
         </a>
        </div>
@@ -80,39 +83,44 @@
        </div>
        <div class="img__mountain inner">
         <a href="mountain-rooms.html"><img src="../images/room-index1.png" alt="" class='img-fluid float-left'></a>
-       </div>   -->  
-    </section>
-    
-    <footer>
-        <div class="left-footer">
-            <p class="powered-by">Copyright © 2019 <br> Powered by <a target='_blank' href="https://tonmediadesign.com">TON Media Design</a></p>
-          </div>
-  
-      <div class="central-footer">
-          <img src="/images/logoHD.jpeg" alt="logo hotel">
-      </div>
-     
-      <div class="right__footer">
-        <ul>
-          <li><h5>Info
-          </h5></li>
-          <li>info@vittoriahotel.eu</li>
-          <li>tel. 0365 641320</li>
-          <li>P.iva 01558810980</li>
-        </ul>
-      </div>
-    </footer>
+       </div>   -->
+  </section>
+
+  <footer>
+    <div class="left-footer">
+      <p class="powered-by">Copyright © 2019 <br> Powered by <a target='_blank' href="https://tonmediadesign.com">TON
+          Media Design</a></p>
+    </div>
+
+    <div class="central-footer">
+      <img src="/images/logoHD.jpeg" alt="logo hotel">
+    </div>
+
+    <div class="right__footer">
+      <ul>
+        <li>
+          <h5>Info
+          </h5>
+        </li>
+        <li>info@vittoriahotel.eu</li>
+        <li>tel. 0365 641320</li>
+        <li>P.iva 01558810980</li>
+      </ul>
+    </div>
+  </footer>
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-    <!-- <script src="../app.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="../javascript/app.js"></script>
 </body>
 
 </html>
