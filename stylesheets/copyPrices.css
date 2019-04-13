@@ -1,0 +1,337 @@
+/* PRICES */
+
+#prices {
+  margin-bottom: 100px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#prices hr {
+  border: 1px solid #bc913c;
+  margin: 20px 20px 3px 20px;
+}
+
+.text-title, .text-season {
+  text-align: center;
+}
+
+.text-title h2, .social-icon-price, i {
+  text-align: center;
+  text-rendering: auto;
+}
+
+.text-title h2 {
+  text-transform: uppercase;
+}
+
+.text-season span {
+  color: #bc913c;
+  font-weight: 300;
+}
+
+.text-season h3 {
+  color: #bc913c;
+  font-weight: 200;
+}
+
+.pricing-table-input {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+     "season person room button";
+  justify-items: center;
+  padding: 30px;
+  margin: 0 auto;
+  background: #19193b;
+} 
+
+.pricing-table-input h3 {
+  font-weight: 200;
+  color: #bc913c;
+}
+
+.pricing-table-input span {
+  color: #bc913c;
+  font-weight: 300;
+}
+
+span.msg,
+span.choose {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit
+}
+.container-selection {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* DROPDOWN */
+
+.dropdown-selection {
+  width: 250px;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #120e2b;
+  height: 100%;
+  text-align: center;
+}
+.dropdown-selection .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.dropdown-selection .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+.dropdown-selection:hover {
+   box-shadow: 0 0 10px 4px #bc913c;
+}
+.dropdown-selection:active {
+    background-color: #f8f8f8;
+}
+.dropdown-selection.active:hover,
+.dropdown-selection.active {
+    box-shadow: 0 0 10px 4px #bc913c;
+    border-radius: 5px 5px 0 0;
+    background-color: #f8f8f8;
+}
+.dropdown-selection.active .select > i {
+    transform: rotate(-90deg)
+}
+.dropdown-selection .dropdown-menu-selection {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdown-selection .dropdown-menu-selection li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+.dropdown-selection .dropdown-menu-selection {
+    padding: 0;
+    list-style: none
+}
+.dropdown-selection .dropdown-menu-selection li:hover {
+    background-color: #120e2b;
+    color: #bc913c;
+}
+.dropdown-selection .dropdown-menu-selection li:active {
+    background-color: #e2e2e2
+}
+
+.dropdown-selection .dropdown-menu-selection li {
+  font-size: 18px;
+}
+
+.pricing-table-input span {
+  font-size: 18px;
+}
+
+.show-img img {
+  width: 80%;
+  align-self: center;
+}
+
+#show-btn {
+  margin-top: 8px;
+  margin-left: 40px;
+  align-self: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.rooms-service ul {
+  list-style-type: none;
+}
+
+.pricing-table-input button {
+  text-decoration: none;
+  color: #120e2b;
+  border: none;
+  display: inline;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.5s linear;
+  cursor: pointer;
+  background: #bc913c;
+  width: 220px;
+}
+
+
+/* ------- LOADER -------- */
+
+#loading {
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+
+#loading img {
+  width: 150px;
+}
+
+#error {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
+
+#error p {
+  padding: 10px;
+  color:  #ff0000;
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ------- SHOW RESULTS ------- */
+
+.results {
+  font-family: 'Advent Pro', sans-serif;
+  display: grid;/* 
+  visibility: hidden; */
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  border: 1px solid white;
+  padding: 40px;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f0c29, #29254e, #24243e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f0c29, #282550, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.person-number {
+  text-transform: uppercase;
+  color: #bc913c;
+  align-self: center;
+  font-size: 2rem;
+}
+
+.number {
+  font-size: 60px;
+  color: white;
+}
+
+.price-result {
+  font-size: 22px;
+}
+
+.price-result .btn {
+  border: 1px solid #bc913c;
+  background: transparent;
+  border-radius: 15px;
+  color: #bc913c;
+  font-size: 20px;
+  width: 180px;
+  padding: 5px;
+  font-weight: 100;
+}
+
+.price-result .btn:hover {
+  background: #bc913c;
+  color: #120e2b;
+  cursor: pointer;
+}
+
+.price-result .btn:hover i{
+  color: #120e2b;
+}
+
+.price-result .price {
+  font-size: 60px;
+  color: #bc913c;
+}
+
+.results img {
+  width: 100%;
+}
+
+.results i {
+  color: #bc913c;
+}
+
+.person-number {
+  text-align: center;
+  place-self: center;
+}
+
+.rooms-service {
+  place-self: center;
+}
+
+.price-result {
+  place-self: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .pricing-table-input{
+    grid-template-areas: 
+      "season person" 
+      "room button";
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .pricing-table-input{
+    grid-template-areas: 
+      "season" 
+      "person" 
+      "room" 
+      "button";
+  }
+  #show-btn {
+    margin-left: 0px;
+  }
+  .text-title h2, h5 {
+    text-align: center;
+    text-rendering: auto;
+    margin: 0 -40px;
+  }  
+}
+
+@media screen and (max-width: 640px){
+  .results {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: none;
+    grid-gap: 0;
+    padding: 0;
+  }
+  .rooms-service ul {
+    text-align: start;
+  }
+}

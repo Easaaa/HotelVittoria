@@ -68,8 +68,8 @@ if (isset($_POST['submit'])) {
   </div>
 
   <div id="topBtn">
-    <a href="#mainNavbar">
-      <i class="fas fa-arrow-up"></i>
+    <a href="#languages">
+      <i class="fas fa-chevron-up"></i>
     </a>
   </div>
 
