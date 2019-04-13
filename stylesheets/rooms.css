@@ -22,7 +22,6 @@
 
 .card-room {
   text-align: center;
-  text-transform: uppercase;
   padding: 20px;
   background: #19193b;
 }
@@ -41,6 +40,7 @@
   letter-spacing: 2px;
   border-radius: 10px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .card-room a:hover {
