@@ -97,6 +97,10 @@ a {
   margin-top: 60px;
 }
 
+#prices-logo {
+  margin-top: 0;
+}
+
 .half__logo img {
   border-radius: 0 0 50% 50%;
 }

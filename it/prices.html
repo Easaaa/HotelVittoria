@@ -92,15 +92,15 @@
 
 
   <form action="">
-    <div class="container" id="input-season">
+    <div class="container-form" id="input-season">
       <h3>Scegli la stagione:</h3>
       <ul>
-        <li>
+        <li class="season-check">
           <input type="radio" id="high-option" name="season">
           <label for="high-option">Alta Stagione</label>
           <div class="check"></div>
         </li>
-        <li>
+        <li class="season-check">
           <input type="radio" id="low-option" name="season">
           <label for="low-option">Bassa Stagione</label>
           <div class="check">
@@ -110,7 +110,7 @@
       </ul>
     </div>
 
-    <div class="container" id="input-personPerRoom">
+    <div class="container-form" id="input-personPerRoom">
       <h3>Qaunte persone?</h3>
       <ul>
         <li>
@@ -138,23 +138,23 @@
       </ul>
     </div>
 
-    <div class="container" id="input-typeOfRoom">
+    <div class="container-form" id="input-typeOfRoom">
       <h3>Scegli il tipo di camera:</h3>
       <ul>
-        <li>
+        <li class="lake-view-check">
           <input type="radio" id="lake-option" name="typeOfRoom">
           <label for="lake-option">Vista Lago</label>
           <div class="check">
             <div class="inside"></div>
           </div>
         </li>
-        <li>
+        <li class="lake-view-check">
           <input type="radio" id="garden-option" name="typeOfRoom">
           <label for="garden-option">Vista Giardino</label>
           <div class="check">
           </div>
         </li>
-        <li>
+        <li class="lake-view-check">
           <input type="radio" id="mountain-option" name="typeOfRoom">
           <label for="mountain-option">Vista Montagna</label>
           <div class="check">
@@ -163,6 +163,9 @@
       </ul>
       <div id="search-btn">
         <input type="submit" value="Cerca">
+      </div>
+      <div id="reset-btn">
+        <input type="submit" value="Reset">
       </div>
     </div>
   </form>
