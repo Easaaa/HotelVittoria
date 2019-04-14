@@ -102,9 +102,6 @@ i {
   margin-top: 20px;
   margin-bottom: 100px;
   background: #19193b;
-  /* background: #0f0c29; 
-  background: -webkit-linear-gradient(to right, #0f0c29, #29254e, #24243e);
-  background: linear-gradient(to right, #0f0c29, #282550, #24243e);  */
   font-size: 1.5rem;
   font-weight: 200;
 }
@@ -171,9 +168,15 @@ i {
   color: #bc913c;
 }
 
+@media screen and (min-width: 1500px) {
+  .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1800px;
+  }
+}
 
-
-/* -------- EXPERIMENT ------- */
+/* -------- INPUT STYLE ------- */
 
 .container-form {
   display: block;
@@ -279,9 +282,16 @@ input[type=radio]:checked~label {
   font-weight: 300;
 }
 
-#search-btn,
+#search-btn {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 #reset-btn {
   padding-bottom: 20px;
+  text-align: center;
+  padding-top: 30px;
+  display: none;
 }
 
 #search-btn input {
@@ -293,7 +303,6 @@ input[type=radio]:checked~label {
   text-transform: uppercase;
   cursor: pointer;
   font-size: 1.2rem;
-  position: relative;
   font-weight: 100;
   letter-spacing: 1.2px;
 }
@@ -301,14 +310,12 @@ input[type=radio]:checked~label {
 #reset-btn input {
   padding: 8px 25px;
   border: none;
-  background: #bc913c;
+  background: #FFFFFF;
   border-radius: 5px;
-  color: white;
+  color: #120e2b;
   text-transform: uppercase;
   cursor: pointer;
   font-size: 1.2rem;
-  position: absolute;
-  display: none;
   font-weight: 100;
   letter-spacing: 1.2px;
 }
@@ -339,5 +346,9 @@ input[type=radio]:checked~label {
 
   ul .season-check .check {
     left: 350px;
+  }
+
+  ul .lake-view-checkDEU .check {
+    left: 280px;
   }
 }

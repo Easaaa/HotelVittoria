@@ -553,7 +553,8 @@ footer {
   font-size: 1rem;
   letter-spacing: 1px;
   color: white;
-  background: #0f0c29;
+  /* background: #0f0c29; */
+  background: #0a0917;
   border-top: 1px solid #bc913c;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

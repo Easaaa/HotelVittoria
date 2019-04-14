@@ -52,35 +52,32 @@
   <div id='prices'>
     <div class='text-title'>
       <h2>Prezzi</h2>
-      <p>Seleziona in base alle tue preferenze le informazioni richieste per scoprire le nostre tariffe</p>
+      <p>Seleziona in base alle tue preferenze le informazioni richieste per scoprire le nostre tariffe.</p>
       <hr>
     </div>
   </div>
 
-  <div class="text-season">
-    <h3>I periodi sono:</h3>
-    <p><span>Alta Stagione</span> dal 01/07/2019 al 15/09/2019 e nel periodo Pasquale. </br><span>Bassa Stagione</span>
-      dal 03/04 al 31/06 e dal 16/09 al 22/10.</p>
-  </div>
-
-  <div id="error">
-    <p>Ci dispiace, ma la camera che state cercando non è disponibile.</p>
-  </div>
-
-  <form action="">
+  <form id="form" action="">
     <div class="container-form" id="input-season">
+      <div class="text-season">
+        <h3>I periodi sono:</h3>
+        <p><span>Alta Stagione</span> dal 01/07/2019 al 15/09/2019 e nel periodo Pasquale. </br><span>Bassa
+            Stagione</span>
+          dal 03/04 al 31/06 e dal 16/09 al 22/10.</p>
+      </div>
       <h3>Scegli la stagione:</h3>
       <ul>
         <li class="season-check">
-          <input type="radio" id="high-option" name="season">
+          <input type="radio" id="high-option" name="season" checked>
           <label for="high-option">Alta Stagione</label>
-          <div class="check"></div>
+          <div class="check">
+            <div class="inside"></div>
+          </div>
         </li>
         <li class="season-check">
           <input type="radio" id="low-option" name="season">
           <label for="low-option">Bassa Stagione</label>
           <div class="check">
-            <div class="inside"></div>
           </div>
         </li>
       </ul>
@@ -95,7 +92,7 @@
           <div class="check"></div>
         </li>
         <li>
-          <input type="radio" id="double-option" name="personPerRoom">
+          <input type="radio" id="double-option" name="personPerRoom" checked>
           <label for="double-option">2</label>
           <div class="check">
             <div class="inside"></div>
@@ -118,7 +115,7 @@
       <h3>Scegli il tipo di camera:</h3>
       <ul>
         <li class="lake-view-check">
-          <input type="radio" id="lake-option" name="typeOfRoom">
+          <input type="radio" id="lake-option" name="typeOfRoom" checked>
           <label for="lake-option">Vista Lago</label>
           <div class="check">
             <div class="inside"></div>
@@ -140,35 +137,42 @@
       <div id="search-btn">
         <input type="submit" value="Cerca">
       </div>
-      <div id="reset-btn">
-        <input type="submit" value="Reset">
-      </div>
     </div>
   </form>
+
+  <div id="reset-btn">
+    <input type="submit" value="Nuova Ricerca">
+  </div>
+
+  <div id="error">
+    <p>Ci dispiace, ma la camera che state cercando non è disponibile.</p>
+  </div>
 
   <div id="loading">
     <img src="../images/loader.svg" alt="gif loading">
   </div>
 
-  <div class="results">
+  <div id="card-result" class="results">
     <div class="show-img">
       <img class="dinamic-img" src="" alt="">
     </div>
-    <div class="person-number ">
-      <p>Camera vista <span class="view-word">lago</span> per <br> <span class="number">3</span> persone</p>
-    </div>
-    <div class="border"></div>
-    <div class="rooms-service">
-      <ul>
-        <li><i class="fas fa-coffee"></i> Colazione intercontinentale</li>
-        <li><i class="fas fa-wifi"></i> Wi-Fi alta velocità</li>
-        <li><i class="fas fa-parking"></i> Parcheggio</li>
-      </ul>
-    </div>
-    <div class="border"></div>
-    <div class="price-result">
-      <p>Per Notte / <span class="price">€ 100</span></p>
-      <a href="contact.php" class="btn"><i class="fas fa-book-open"></i> Prenota Ora</a>
+    <div class="second-col">
+      <div class="person-number ">
+        <p>Camera vista <span class="view-word">lago</span> per <br> <span class="number">3</span> persone</p>
+      </div>
+      <div class="border"></div>
+      <div class="rooms-service">
+        <ul>
+          <li><i class="fas fa-coffee"></i> Colazione intercontinentale</li>
+          <li><i class="fas fa-wifi"></i> Wi-Fi alta velocità</li>
+          <li><i class="fas fa-parking"></i> Parcheggio</li>
+        </ul>
+      </div>
+      <div class="border"></div>
+      <div class="price-result">
+        <p>Per Notte / <span class="price">€ 100</span></p>
+        <a href="contact.php" class="btn"><i class="fas fa-book-open"></i> Prenota Ora</a>
+      </div>
     </div>
   </div>
 
