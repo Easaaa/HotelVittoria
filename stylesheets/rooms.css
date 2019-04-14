@@ -24,6 +24,13 @@
   text-align: center;
   padding: 20px;
   background: #19193b;
+  transition: 0.3s ease-in-out;
+}
+
+.card-content {
+  background: #120e2b;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .card-room h3 {
