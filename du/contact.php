@@ -24,7 +24,7 @@
 
   <div class="container">
     <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark py-0 fixed-top" style='color:yellow'>
-      <a class="navbar-brand" href="#">★ ★ ★
+      <a class="navbar-brand" href="index.html">★ ★ ★
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navigation">
         <span class="navbar-toggler-icon"></span>
