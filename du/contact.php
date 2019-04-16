@@ -40,10 +40,8 @@
     </nav>
   </div>
 
-  <div class='logo-pages'>
-    <div class='container text-center'>
-      <img src="../images/logoHD.jpeg" alt="">
-    </div>
+  <div class="half__logo">
+    <img src="../images/half-logoHD.jpg" alt="half logo">
   </div>
 
   <div id="topBtn">
