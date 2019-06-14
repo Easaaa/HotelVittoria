@@ -160,8 +160,7 @@ a {
   grid-template-areas:
     'logo logo secondary'
     'logo logo secondary'
-    'mouse mouse mouse'
-    'rate rate rate';
+    'mouse mouse mouse';
   height: 75vh;
   place-content: center;
   padding: 65px 0;
@@ -462,7 +461,7 @@ a {
 }
 
 .service:hover {
-  background: #141431;
+  background: #1e1e4a85;
 }
 
 @media screen and (max-width: 800px) {
