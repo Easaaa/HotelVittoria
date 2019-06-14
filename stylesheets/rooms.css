@@ -37,7 +37,8 @@
 }
 
 .card-room:hover {
-  background: #2a2a4a;
+  /* background: #2a2a4a; */
+  background: #bc913c;
 }
 
 .card-content {
@@ -93,6 +94,7 @@
   grid-template-areas: 'text img';
   margin: 0 auto;
   width: 90%;
+  max-width: 1200px;
 }
 
 .show-rooms h2 {
@@ -104,12 +106,14 @@
   min-width: 320px;
   max-width: 600px;
   margin-top: 100px;
+  background: #fff;
+  padding: 10px;
 }
 
-.show-rooms hr {
+/* .show-rooms hr {
   border: 1px solid #bc913c;
   margin: 10px 20px 3px 20px;
-}
+} */
 
 .show-rooms ul {
   list-style-type: none;
@@ -126,11 +130,8 @@
 
 .left-side {
   padding: 50px;
-}
-
-.left-side {
+  max-width: 650px;
   text-align: start;
-  align-self: start;
 }
 
 @media screen and (max-width: 1050px) {
@@ -144,11 +145,6 @@
       'text'
       'img';
     place-items: center;
-  }
-
-  .left-side {
-    text-align: center;
-    align-self: center;
   }
 
   .show-rooms img {
@@ -179,13 +175,14 @@
   }
 
   .left-side h2 {
-    text-align: center;
+    text-align: start;
   }
 }
 
 .extra-info {
   margin: 0 auto;
   width: 90%;
+  max-width: 650px;
   padding-bottom: 150px;
 }
 
@@ -199,18 +196,26 @@
   font-family: 'Advent Pro', sans-serif;
 }
 
-.extra-info p {
-  font-size: 18px;
-}
-
 .extra-info .btn {
   color: #bc913c;
   background: transparent;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
 }
 
 .extra-info .card {
   background: transparent;
   border-bottom: 1px solid #bc913c;
+}
+
+@media screen and (min-width: 1050px) {
+  .extra-info {
+    max-width: 1000px;
+  }
+
+  .left-side {
+    padding: 100px;
+  }
 }
