@@ -1,215 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spectral"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/main.css" />
+    <link rel="stylesheet" href="../stylesheets/prices.css" />
 
-  <link rel='stylesheet' href='../stylesheets/main.css'>
-  <link rel='stylesheet' href='../stylesheets/prices.css'>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="icon" href="../images/logo.png" type="image/png" />
+    <title>Hotel Vittoria</title>
+  </head>
 
-  <link rel="icon" href="../images/logo.png" type="image/png">
-  <title>Hotel Vittoria</title>
-</head>
-
-<body>
-
-  <div class="container">
-    <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark py-0 fixed-top" style='color:yellow'>
-      <a class="navbar-brand" href="index.html">★ ★ ★
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
-        aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="index-rooms.html">ROOMS</a></li>
-          <li class="nav-item"><a class="nav-link" href="prices.html">PRICES</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.php">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-
-  <div class="half__logo">
-    <img src="../images/half-logoHD.jpg" alt="half logo">
-  </div>
-
-
-  <div id='prices'>
-    <div class='text-title'>
-      <h2>Prices</h2>
-      <p>Please select the period to discover all the information and our prices</p>
-      <hr>
-    </div>
-  </div>
-
-  <form id="form" action="">
-    <div class="container-form" id="input-season">
-      <h3><i class="fas fa-caret-right"></i>Select the Season:</h3>
-      <ul>
-        <li class="season-check">
-          <input type="radio" id="high-option" name="season" checked>
-          <label for="high-option">High Season</label>
-          <p>from 01/07 to 15/09/2019 and during Easter Holidays.</p>
-          <div class="check">
-            <div class="inside"></div>
-          </div>
-        </li>
-        <li class="season-check">
-          <input type="radio" id="low-option" name="season">
-          <label for="low-option">Low Season</label>
-          <p>from
-            03/04 and 31/06/2019 and from 16/09 to 22/10/2019.</p>
-          <div class="check">
-          </div>
-        </li>
-      </ul>
+  <body>
+    <div class="container">
+      <nav
+        id="mainNavbar"
+        class="navbar navbar-expand-md navbar-dark py-0 fixed-top"
+        style="color:yellow"
+      >
+        <a class="navbar-brand" href="index.html">★ ★ ★ </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navLinks"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index-rooms.html">ROOMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prices.html">PRICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-    <div class="container-form" id="input-personPerRoom">
-      <h3><i class="fas fa-caret-right"></i>How many people?</h3>
-      <ul>
-        <li>
-          <input type="radio" id="single-option" name="personPerRoom">
-          <label for="single-option">1</label>
-          <div class="check"></div>
-        </li>
-        <li>
-          <input type="radio" id="double-option" name="personPerRoom" checked>
-          <label for="double-option">2</label>
-          <div class="check">
-            <div class="inside"></div>
-          </div>
-        </li>
-        <li>
-          <input type="radio" id="triple-option" name="personPerRoom">
-          <label for="triple-option">3</label>
-          <div class="check"></div>
-        </li>
-        <li>
-          <input type="radio" id="quadruple-option" name="personPerRoom">
-          <label for="quadruple-option">4</label>
-          <div class="check"></div>
-        </li>
-      </ul>
+    <div class="half__logo">
+      <img src="../images/half-logoHD.jpg" alt="half logo" />
     </div>
 
-    <div class="container-form" id="input-typeOfRoom">
-      <h3><i class="fas fa-caret-right"></i>Select the room:</h3>
-      <ul>
-        <li class="lake-view-check">
-          <input type="radio" id="lake-option" name="typeOfRoom" checked>
-          <label for="lake-option">Lake View</label>
-          <div class="check">
-            <div class="inside"></div>
-          </div>
-        </li>
-        <li class="lake-view-check">
-          <input type="radio" id="garden-option" name="typeOfRoom">
-          <label for="garden-option">Garden View</label>
-          <div class="check">
-          </div>
-        </li>
-        <li class="lake-view-check">
-          <input type="radio" id="mountain-option" name="typeOfRoom">
-          <label for="mountain-option">Internal View</label>
-          <div class="check">
-          </div>
-        </li>
-      </ul>
-      <div id="search-btn">
-        <input type="submit" value="Search">
+    <div id="prices">
+      <div class="text-title">
+        <h2>Prices</h2>
+        <p>
+          Please select the period to discover all the information and our
+          prices
+        </p>
+        <hr />
       </div>
     </div>
-  </form>
 
-  <div id="reset-btn">
-    <input type="submit" value="Reset">
-  </div>
-
-  <div id="error">
-    <p>Sorry, the rooms is not available.</p>
-  </div>
-
-  <div id="loading">
-    <img src="../images/loader.svg" alt="gif loading">
-  </div>
-
-  <div class="results">
-    <div class="show-img">
-      <img class="dinamic-img" src="" alt="">
-    </div>
-    <div class="second-col">
-      <div class="person-number ">
-        <p>Room with <span class="view-word">Lake</span> View for <span class="number">3</span> people.</p>
-      </div>
-      <div class="rooms-service">
+    <form id="form" action="">
+      <div class="container-form" id="input-season">
+        <h3><i class="fas fa-caret-right"></i>Select the Season:</h3>
         <ul>
-          <li><i class="fas fa-coffee"></i> Intercontinental Breakfast</li>
-          <li><i class="fas fa-wifi"></i> High-speed Wi-Fi access</li>
-          <li><i class="fas fa-parking"></i> Private Parking</li>
+          <li class="season-check">
+            <input type="radio" id="high-option" name="season" checked />
+            <label for="high-option">High Season</label>
+            <p>from 01/07 to 15/09/2019 and during Easter Holidays.</p>
+            <div class="check">
+              <div class="inside"></div>
+            </div>
+          </li>
+          <li class="season-check">
+            <input type="radio" id="low-option" name="season" />
+            <label for="low-option">Low Season</label>
+            <p>from 03/04 and 31/06/2019 and from 16/09 to 22/10/2019.</p>
+            <div class="check"></div>
+          </li>
         </ul>
       </div>
-      <div class="price-result">
-        <p>Per Night / <span class="price">€ 100</span></p>
-        <a href="contact.php" class="btn"><i class="fas fa-book-open"></i> Book Now</a>
+
+      <div class="container-form" id="input-personPerRoom">
+        <h3><i class="fas fa-caret-right"></i>How many people?</h3>
+        <ul>
+          <li>
+            <input type="radio" id="single-option" name="personPerRoom" />
+            <label for="single-option">1</label>
+            <div class="check"></div>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="double-option"
+              name="personPerRoom"
+              checked
+            />
+            <label for="double-option">2</label>
+            <div class="check">
+              <div class="inside"></div>
+            </div>
+          </li>
+          <li>
+            <input type="radio" id="triple-option" name="personPerRoom" />
+            <label for="triple-option">3</label>
+            <div class="check"></div>
+          </li>
+          <li>
+            <input type="radio" id="quadruple-option" name="personPerRoom" />
+            <label for="quadruple-option">4</label>
+            <div class="check"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container-form" id="input-typeOfRoom">
+        <h3><i class="fas fa-caret-right"></i>Select the room:</h3>
+        <ul>
+          <li class="lake-view-check">
+            <input type="radio" id="lake-option" name="typeOfRoom" checked />
+            <label for="lake-option">Lake View</label>
+            <div class="check">
+              <div class="inside"></div>
+            </div>
+          </li>
+          <li class="lake-view-check">
+            <input type="radio" id="garden-option" name="typeOfRoom" />
+            <label for="garden-option">Garden View</label>
+            <div class="check"></div>
+          </li>
+          <li class="lake-view-check">
+            <input type="radio" id="mountain-option" name="typeOfRoom" />
+            <label for="mountain-option">Internal View</label>
+            <div class="check"></div>
+          </li>
+        </ul>
+        <div id="search-btn">
+          <input type="submit" value="Search" />
+        </div>
+      </div>
+    </form>
+
+    <div id="reset-btn">
+      <input type="submit" value="Reset" />
+    </div>
+
+    <div id="error">
+      <p>Sorry, the rooms is not available.</p>
+    </div>
+
+    <div id="loading">
+      <img src="../images/loader.svg" alt="gif loading" />
+    </div>
+
+    <div class="results">
+      <div class="show-img">
+        <img class="dinamic-img" src="" alt="" />
+      </div>
+      <div class="second-col">
+        <div class="person-number ">
+          <p>
+            Room with <span class="view-word">Lake</span> View for
+            <span class="number">3</span> people.
+          </p>
+        </div>
+        <div class="rooms-service">
+          <ul>
+            <li><i class="fas fa-coffee"></i> Intercontinental Breakfast</li>
+            <li><i class="fas fa-wifi"></i> High-speed Wi-Fi access</li>
+            <li><i class="fas fa-parking"></i> Private Parking</li>
+          </ul>
+        </div>
+        <div class="price-result">
+          <p>Per Night / <span class="price">€ 100</span></p>
+          <a href="contact.php" class="btn"
+            ><i class="fas fa-book-open"></i> Book Now</a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="left-footer">
-      <p class="powered-by">Copyright © 2019 <br> Powered by <a target='_blank' href="https://tonmediadesign.com">TON
-          Media Design</a></p>
-    </div>
+    <footer>
+      <div class="left-footer">
+        <p class="powered-by">
+          Copyright © 2019 <br />
+          Powered by
+          <a target="_blank" href="https://leonardotononi.com"
+            >Leonardo Tononi</a
+          >
+        </p>
+      </div>
 
-    <div class="central-footer">
-      <img src="/images/logoHD.jpeg" alt="logo hotel">
-    </div>
+      <div class="central-footer">
+        <img src="/images/logoHD.jpeg" alt="logo hotel" />
+      </div>
 
-    <div class="right__footer">
-      <ul>
-        <li>
-          <h5>Info
-          </h5>
-        </li>
-        <li>info@vittoriahotel.eu</li>
-        <li>tel. 0365 641320</li>
-        <li>P.iva 01558810980</li>
-      </ul>
-    </div>
-  </footer>
+      <div class="right__footer">
+        <ul>
+          <li>
+            <h5>Info</h5>
+          </li>
+          <li>info@vittoriahotel.eu</li>
+          <li>tel. 0365 641320</li>
+          <li>P.iva 01558810980</li>
+        </ul>
+      </div>
+    </footer>
 
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-  <script src="../javascript/appPrices.js"></script>
-
-
-
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../javascript/appPrices.js"></script>
+  </body>
 </html>

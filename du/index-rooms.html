@@ -1,124 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spectral"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/main.css" />
+    <link rel="stylesheet" href="../stylesheets/rooms.css" />
 
-  <link rel='stylesheet' href='../stylesheets/main.css'>
-  <link rel='stylesheet' href='../stylesheets/rooms.css'>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="../images/logo.png" type="image/png" />
+    <title>Hotel Vittoria</title>
+  </head>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link rel="icon" href="../images/logo.png" type="image/png">
-  <title>Hotel Vittoria</title>
-</head>
+  <body>
+    <div class="container">
+      <nav
+        id="mainNavbar"
+        class="navbar navbar-expand-md navbar-dark py-0 fixed-top"
+        style="color:yellow"
+      >
+        <a class="navbar-brand" href="index.html">★ ★ ★ </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navLinks"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index-rooms.html">ZIMMER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prices.html">PREISE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php">KONTAKT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-<body>
+    <div class="half__logo">
+      <img src="../images/half-logoHD.jpg" alt="half logo" />
+    </div>
 
-  <div class="container">
-    <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark py-0 fixed-top" style='color:yellow'>
-      <a class="navbar-brand" href="index.html">★ ★ ★
+    <div id="indexRooms">
+      <div class="txt-indexRooms">
+        <h2>Die Zimmer</h2>
+        <p>
+          Wenn du auf die Fotos klickst, wirst du weiter Bilder sehen können und
+          alle Informationen zu unseren diversen Zimmern erhalten.
+        </p>
+        <hr />
+      </div>
+    </div>
+    <div id="cards-room">
+      <a href="lake-rooms.html">
+        <div class="card-room">
+          <div class="card-content">
+            <i class="fas fa-water"></i>
+            <h3>
+              Die Zimmer <br />
+              mit Blick auf den See
+            </h3>
+          </div>
+        </div>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
-        aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="index-rooms.html">ZIMMER</a></li>
-          <li class="nav-item"><a class="nav-link" href="prices.html">PREISE</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.php">KONTAKT</a></li>
+      <a href="garden-rooms.html">
+        <div class="card-room">
+          <div class="card-content">
+            <i class="fas fa-tree"></i>
+            <h3>
+              Die Zimmer <br />
+              im Erdgeschoss
+            </h3>
+          </div>
+        </div>
+      </a>
+      <a href="mountain-rooms.html">
+        <div class="card-room">
+          <div class="card-content">
+            <i class="fas fa-mountain"></i>
+            <h3>
+              Die nach innen <br />
+              ausgerichteten Zimmer
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <div class="left-footer">
+        <p class="powered-by">
+          Copyright © 2019 <br />
+          Powered by
+          <a target="_blank" href="https://leonardotononi.com"
+            >Leonardo Tononi</a
+          >
+        </p>
+      </div>
+
+      <div class="central-footer">
+        <img src="/images/logoHD.jpeg" alt="logo hotel" />
+      </div>
+
+      <div class="right__footer">
+        <ul>
+          <li>
+            <h5>Info</h5>
+          </li>
+          <li>info@vittoriahotel.eu</li>
+          <li>tel. 0365 641320</li>
+          <li>P.iva 01558810980</li>
         </ul>
       </div>
-    </nav>
-  </div>
+    </footer>
 
-
-  <div class="half__logo">
-    <img src="../images/half-logoHD.jpg" alt="half logo">
-  </div>
-
-  <div id='indexRooms'>
-    <div class="txt-indexRooms">
-      <h2>Die Zimmer</h2>
-      <p>Wenn du auf die Fotos klickst, wirst du weiter Bilder sehen können und alle Informationen zu unseren diversen
-        Zimmern erhalten.</p>
-      <hr>
-    </div>
-  </div>
-  <div id="cards-room">
-    <a href="lake-rooms.html">
-      <div class="card-room">
-        <div class="card-content">
-          <i class="fas fa-water"></i>
-          <h3>Die Zimmer <br> mit Blick auf den See</h3>
-        </div>
-      </div>
-    </a>
-    <a href="garden-rooms.html">
-      <div class="card-room">
-        <div class="card-content">
-          <i class="fas fa-tree"></i>
-          <h3>Die Zimmer <br> im Erdgeschoss</h3>
-        </div>
-      </div>
-    </a>
-    <a href="mountain-rooms.html">
-      <div class="card-room">
-        <div class="card-content">
-          <i class="fas fa-mountain"></i>
-          <h3>Die nach innen <br> ausgerichteten Zimmer</h3>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <footer>
-    <div class="left-footer">
-      <p class="powered-by">Copyright © 2019 <br> Powered by <a target='_blank' href="https://tonmediadesign.com">TON
-          Media Design</a></p>
-    </div>
-
-    <div class="central-footer">
-      <img src="/images/logoHD.jpeg" alt="logo hotel">
-    </div>
-
-    <div class="right__footer">
-      <ul>
-        <li>
-          <h5>Info
-          </h5>
-        </li>
-        <li>info@vittoriahotel.eu</li>
-        <li>tel. 0365 641320</li>
-        <li>P.iva 01558810980</li>
-      </ul>
-    </div>
-  </footer>
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-  <script src="../javascript/app.js"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../javascript/app.js"></script>
+  </body>
 </html>
